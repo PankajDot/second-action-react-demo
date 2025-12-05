@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get code
-    - uses: actions/checkcout@v3
+      uses: actions/checkcout@v3
     - name: Install NodeJs
-    - uses: actions/setup-node@v3
+      uses: actions/setup-node@v3
     - name: Install dependencies
-    - uses: npm ci
+      run: npm ci
     - name: run tests
-    - uses: npm test
+      run: npm test
